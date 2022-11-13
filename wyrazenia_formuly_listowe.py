@@ -15,9 +15,9 @@ potegi1 = [element**2 for element in liczby]
 
 # można też napisać
 
-potegi2 = [element ** 2                 # CO WYKONUJEMY
-        for elemenet in liczby     # SKĄD POBIERAMY
-        ]
+potegi2 =   [element ** 2                 # CO WYKONUJEMY
+            for element in liczby     # SKĄD POBIERAMY
+            ]
 
 parzyste2 = [element                   # CO WYKONUJEMY - nic
             for element in liczby      # SKĄD POBIERAMY
@@ -31,5 +31,7 @@ co_zrobic_na_elemencie  for element in staraLista   warunek oparty na elemencie
 liczby = [1, 2, 3, 4, 5, 6]
 
 potegiRange = [element**2                   # CO WYKONUJEMY
-              for elemenet in range(20)     # SKĄD POBIERAMY
+              for element in range(20)     # SKĄD POBIERAMY
               ]
+
+print(potegiRange)
