@@ -7,25 +7,43 @@ Progam w którym użytkownik:
 
 Words = {}
 
-print("1. Dodaj definicję")
-print("2. Szukaj definicji:")
-print("3. Usun wybraną definicję:")
-print("4. Zakończ")
+while(True):
 
-choose = input('Wybierz opcje: ')
+    print("1. Dodaj definicję")
+    print("2. Szukaj definicji:")
+    print("3. Usun wybraną definicję:")
+    print("4. Zakończ")
 
-if (choose == 1):
-    keyWord = input("Podaj klucz: ")
-    defWord = input("Podaj definicję: ")
-    Words[keyWord] = defWord
-    print("Definicja została dodana")
+    choose = input('Wybierz opcje: ')
+
+    if (choose == '1'):
+
+        keyWord = input("Podaj klucz: ")
+        defWord = input("Podaj definicję: ")
+        Words[keyWord] = defWord
+        print("Definicja została dodana\n")
+
+    elif (choose == '2'):
+
+        keyWord = input("Czego szukasz: ")
+
+        if keyWord in Words:
+            print(Words[keyWord]"\n")
+        else:
+            print("Nie znaleziono\n")
+
+    elif (choose == '3'):
+
+        keyWord = input("Co chcesz usunąć")
+
+        if keyWord in Words:
+            del Words[keyWord]
+            print("Usunięto")
+        else:
+            print("Nie znaleziono\n")
 '''
-elsif (choose == 2):
-
-elsif (choose == 3):
-
-elsif (choose == 4):
-    break
-else :
-    continue
+    elif (choose == '4'):
+        break
+    else:
+        continue
 '''
