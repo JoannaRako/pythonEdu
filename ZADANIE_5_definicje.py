@@ -16,34 +16,35 @@ while(True):
 
     choose = input('Wybierz opcje: ')
 
-    if (choose == '1'):
+    if choose == '1':
 
         keyWord = input("Podaj klucz: ")
         defWord = input("Podaj definicję: ")
         Words[keyWord] = defWord
         print("Definicja została dodana\n")
 
-    elif (choose == '2'):
+    elif choose == '2':
 
         keyWord = input("Czego szukasz: ")
 
         if keyWord in Words:
-            print(Words[keyWord]"\n")
+            print(Words[keyWord], "\n")
         else:
             print("Nie znaleziono\n")
 
-    elif (choose == '3'):
+    elif choose == '3':
 
         keyWord = input("Co chcesz usunąć")
 
         if keyWord in Words:
             del Words[keyWord]
-            print("Usunięto")
+            print("Usunięto\n")
         else:
             print("Nie znaleziono\n")
-'''
-    elif (choose == '4'):
+
+    elif choose == '4':
+        print("Zamykam\n")
         break
+
     else:
-        continue
-'''
+        print("Zły wybór, jeszcze raz\n")
