@@ -25,7 +25,7 @@ listaGosci.add(('Karol', 25, 'mężczyzna'))
 # in tuple we use .add
 
 print(listaGosci)
-'''
+
 
 for imie, wiek, plec, numer in listaGosci:
   print("Imie:", imie)
@@ -33,19 +33,19 @@ for imie, wiek, plec, numer in listaGosci:
   print("Płeć:", plec)
   print("Numer:", numer)
   print() # też enter
-
+'''
 
 # dodawanie wartosci jest szybsze w slowniku, nie liczy sie kolejnosc
 # dictionaries in dictionary
 
 people = {
         "jdhIhjojJIojiOJIJuh1": { 'name': 'John', 'age': 27, 'sex': 'Male' },
-        "jdhIhjojJIojiOJIJuh2": { 'name': 'Ben', 'age': 24, 'sex': 'Male' },
+        "54hgfjojJIoji67565h2": { 'name': 'Ben', 'age': 24, 'sex': 'Male' },
         "jdhIhjojJIojiOJIJuh3": { 'name': 'Ren', 'age': 76, 'sex': 'Female' },
-        "jdhIhjojJIojiOJIJuh4": { 'name': 'Ted', 'age': 85, 'sex': 'Male' },
-        "jdhIhjojJIojiOJIJuh5": { 'name': 'Ross', 'age': 34, 'sex': 'Male' },
-        "jdhIhjojJIojiOJIJuh6": { 'name': 'Monica', 'age': 56, 'sex': 'Female' },
-        "jdhIhjojJIojiOJIJuh7": { 'name': 'Rachel', 'age': 54, 'sex': 'Female' }
+        "544456nhhj54iOJIJuh4": { 'name': 'Ted', 'age': 85, 'sex': 'Male' },
+        "fdgfhjojJIojiOJIJuh5": { 'name': 'Ross', 'age': 34, 'sex': 'Male' },
+        "jahIgfdfdgfg44JIJuh6": { 'name': 'Monica', 'age': 56, 'sex': 'Female' },
+        "ree67jojJIojiOJIJuh7": { 'name': 'Rachel', 'age': 54, 'sex': 'Female' }
          }
 
 # list with dictionaries
@@ -71,7 +71,7 @@ for dictionary in peopleList:         # dla kazdego rekordu w liscie
     print(key, dictionary[key])       # wydrukuj ktory to klucz i jego zawartosc
   print()
 
-'''
+
 for key in people:
   print("id:", key)   # poszczególne klucze
 
@@ -82,7 +82,22 @@ for key in people:
 
 
 for key in people:
-    print("id:", key):  # poszczególne klucze
+    print("id:", key)   # poszczególne klucze
+
     for secondaryKey in people[key]:
         print(secondaryKey, ":", people[key][secondaryKey])
-        print()
+
+    print("\n")
+'''
+# metoda items - działa tylko dla słownika
+
+# () - krotka
+# [] - lista
+# {} - słownik
+
+print(people.items())
+
+for id, dictionary in people.items():       # szybszy sposób
+    print ("id:", id)
+    for key in dictionary:
+        print(key, ":", dictionary[key])
