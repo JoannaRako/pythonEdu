@@ -42,6 +42,7 @@ namesLength = {
     name: len(name)       # 1 - klucz; 2 - wart
     for name in names
 }
+
 '''
 >>> namesLength
 {'Wioletta': 8, 'Jakub': 5, 'Karol': 5, 'Bartłomiej': 10, 'Ardkadiusz': 10}
@@ -53,6 +54,7 @@ namesLength2 = {
     for name in names
     if name.startswith("A")
 }
+
 '''
 >>> namesLength
 {'Ardkadiusz': 10}
