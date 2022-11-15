@@ -2,8 +2,11 @@
 
 names = {"Arkadiusz", "Wioletta", "karol", "bartłomiej", "Jakub"}
 
-names = {
-        (name.capitalize()
-        for name in names
-}
-print(names)
+namesCapitalize = {
+                   name.capitalize()
+                   for name in names
+                   if not name.startswith("B")
+                   if not name.startswith('b')
+                  }
+
+print(namesCapitalize)

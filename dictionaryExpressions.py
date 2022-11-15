@@ -54,6 +54,7 @@ namesLength2 = {
     for name in names
     if name.startswith("A")
 }
+print(namesLength2)
 
 '''
 >>> namesLength
