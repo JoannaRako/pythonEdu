@@ -1,6 +1,11 @@
 import calculationsModule
 
-# print(calculationsModule.pole_kwadratu(4))
+# enumeration - spis - wyliczenie
+from enum import Enum
+
+Menu = Enum('Menu', 'Prostokąt Kwadrat Trójkąt Trapez Koło')
+# jak korzystasz z enumeracji zmienne z duzych liter
+
 
 choose = input("""Wybierz pole której figury chcesz obliczyć?
                 1. Prostokąt
