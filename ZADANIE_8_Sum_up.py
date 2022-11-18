@@ -1,5 +1,12 @@
-number = input("Wpisz liczbę do której mam sumować")
+number = int(input("Wpisz liczbę do której mam sumować"))
 
-for number in range(0, number):
-    sum += number
-    print(sum)
+
+def sumUp(number):
+    sum = 0
+
+    for number in range(1, number+1):
+
+        sum = sum + number
+        return sum
+
+print(sumUp(number))
