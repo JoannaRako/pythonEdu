@@ -3,17 +3,7 @@ import time
 # Zmienna do wszystkiego
 number = int(input("Wpisz liczbę do której mam sumować: \n"))
 
-'''
-# 1. Wersja rozszerzona
-def sumUp(number):
-    sum = 0
-    for number in range(1, number+1):
-        sum = sum + number
-        print("Dla liczby", number, "Wartość sumowania to:", sum)
-    print(sum)
-'''
-
-# 2. Pętlą
+# 1. Pętlą
 def sumUp_for(number):
     sum = 0
     for number in range(1, number+1):
@@ -21,57 +11,63 @@ def sumUp_for(number):
     return sum
 
 
-# 3. Wyrażeniem listy
-def sumUp_generator(number):
+# 2. Wyrażeniem listy
+def sumUp_generatorL(number):
     return sum([number for number in range(1, number+1)])
 
 
-# 4. Wyrażeniem zbioru
-def sumUp_generator(number):
+# 3. Wyrażeniem zbioru
+def sumUp_generatorS(number):
     return sum((number for number in range(1, number+1)))
 
 
-# 5. Wyrażeniem słownikowym
-def sumUp_generator(number):
+# 4. Wyrażeniem słownikowym
+def sumUp_generatorD(number):
     return sum({number for number in range(1, number+1)})
 
 
-# 6. Krótka wersja
+# 5. Krótka wersja
 def sumUp_short(number):
     return (1 + number) / 2 * number
 
-'''
-start = time.perf_counter()
-sumUp(number)
-end = time.perf_counter()
-print("Czas wykonania tej funkcji to: ", end-start)            # Odjęcie czasu początkowego od końcowego
-'''
 
-# Funkcja mierzenia czasu
-
-def timeCount(start):
+# Funkcja mierzenia czasu do porównania
+'''
+def time_count(start):
     end = time.perf_counter()
     return end-start
+'''
 
-start = time.perf_counter()
-print("2:", sumUp_for(number))
-print(timeCount(start))
+#-------------------------------------------------------
+'''
+# 2. function_performance wywołuje inną funkcję
+def function_performance(func):
+    func()
 
+# 3. funkcja zostaje wywołana
+def show_message():
+    print("Wiadomość")
+    
+# 1. przesłanie funkcji show_message do function_performance
+function_performance(show_message)
+'''
 
-start = time.perf_counter()
-print("3:", sumUp_generator(number))
-print(timeCount(start))
+#-------------------------------------- z argumentem
 
-start = time.perf_counter()
-print("4:", sumUp_generator(number))
-print(timeCount(start))
+# 2. function_performance wywołuje inną funkcję-argument oraz drugi argument
+def function_performance(func, arg):
+    start = time.perf_counter()
+    func(arg)
+    end = time.perf_counter()
+    return end - start
 
+# 3. funkcja zostaje wywołana - wydrukowanie argumentu
+def show_message(message):
+    print(message)
 
-start = time.perf_counter()
-print("5:", sumUp_generator(number))
-print(timeCount(start))
-
-
-start = time.perf_counter()
-print("6:", sumUp_short(number))
-print(timeCount(start))
+# 1. przesłanie funkcji-argumentu show_message oraz argumentu "wiadomość" do function_performance
+print(function_performance(sumUp_for, number))
+print(function_performance(sumUp_generatorL, number))
+print(function_performance(sumUp_generatorS, number))
+print(function_performance(sumUp_generatorD, number))
+print(function_performance(sumUp_short, number))
