@@ -65,7 +65,7 @@ def function_performance(func, arg):
 def show_message(message):
     print(message)
 
-# 1. przesłanie funkcji-argumentu show_message oraz argumentu "wiadomość" do function_performance
+# 1. przesłanie funkcji-argumentu 'sumUp_for' oraz argumentu 'number' do function_performance
 print(function_performance(sumUp_for, number))
 print(function_performance(sumUp_generatorL, number))
 print(function_performance(sumUp_generatorS, number))
