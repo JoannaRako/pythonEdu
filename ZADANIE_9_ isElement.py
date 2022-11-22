@@ -13,3 +13,6 @@ def function_performance(func, arg, how_many_times = 1):
 
 setContainer = {i for i in range(1000)}
 listContainer = [i for i in range(1000)]
+
+def is_element(number):
+    if (number == True)
