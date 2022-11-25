@@ -32,3 +32,11 @@ def add4():
 f = 1
 add4()
 
+
+def add5(g, amount = 1):
+    g = g + amount
+    print(g)
+
+g = 1
+add5(g)
+
