@@ -34,6 +34,6 @@ def is_element_in(what_value, container):
 # Jeżeli na odwrót nie trzeba odwoływać się do nazwy zmiennej
 print(function_performance(is_element_in, 20, what_value=element, container=listContainer))
 
-# ARGUMENTY POZYCYJNE (NIENAZWANE) PRZ ED ARGUMENTAMI NAZWANYMI
+# ARGUMENTY POZYCYJNE (NIENAZWANE) PRZED ARGUMENTAMI NAZWANYMI
 # *arg wiele arg nienazwanych(np. what_value = element, container = listContainer)
 # **arg wiele arg nazwanych(np. what_value = element, container = listContainer)
