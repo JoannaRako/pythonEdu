@@ -33,10 +33,12 @@ f = 1
 add4()
 
 
+# NIE ZADZIAŁA ZAMIESZANIE (parametr lokalny zmiennna globalna)
 def add5(g, amount = 1):
-    g = g + amount
-    print(g)
+    global i
+    i = i + amount
+    print(i)
 
-g = 1
-add5(g)
+i = 1
+add5(i)
 
