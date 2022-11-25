@@ -40,14 +40,15 @@ h = 4           # ten sam obiekt o tym samym adresie
 
 
 
-c = 5                    # to samo id
+c = 5                       # to samo id
 print(id(c))
 def add(c, amount = 1):
-    print(id(c))         # to samo id
-    c = c+ amount
+    print(id(c))            # to samo id
+    c = c + amount
     print(id(c))
-
 add(c)
+
+
 
 
 def append_el_to_list(listka, element):       # Placeholder
