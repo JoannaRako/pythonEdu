@@ -1,6 +1,6 @@
 import time
 
-# funkcja która sprawdzi jak szybko działa inna funkcja podaną lub domyślną ilość razy
+# Funkcja, która sprawdzi jak szybko działa inna funkcja - podaną lub domyślną ilość razy
 
 def function_performance(func, arg, how_many_times=1):
     sum = 0
@@ -31,7 +31,7 @@ def is_element_list(element):
 
 
 print(is_element_set(element))
-print(function_performance(is_element_set, element, 20000))         # szybszy niż lista
+print("Czas wykonania:", function_performance(is_element_set, element, 20000))         # szybszy niż lista
 
 print(is_element_list(element))
-print(function_performance(is_element_list, element, 20000))
+print("Czas wykonania:", function_performance(is_element_list, element, 20000))
