@@ -1,6 +1,4 @@
 # Zagnieżdżone typy danych - obiekty w obiektach o podobnych typach
-# krotka
-# lista
 
 listaGosci =    {
                   ('Arkadiusz', 28, 'mężczyzma', 546663456),
@@ -14,7 +12,7 @@ listaGosci2 =   {
                   ('fgbf', 354, 'kobieta', 65366546543),
                   ('bfg', 5, 'niewiadomo', 65366546543)
                 }
-'''
+
 listaGosci3 = listaGosci | listaGosci2    # obie listy - suma
 print(listaGosci3)
 
@@ -33,9 +31,10 @@ for imie, wiek, plec, numer in listaGosci:
   print("Płeć:", plec)
   print("Numer:", numer)
   print() # też enter
-'''
+
 
 # dodawanie wartosci jest szybsze w slowniku, nie liczy sie kolejnosc
+
 # dictionaries in dictionary
 
 people = {
@@ -62,7 +61,7 @@ ratings =   {
             "Arkadiusz": (3, 3, 3, 4, 4, 5),
             "Beata": (3, 3, 3, 4, 4, 5),
             }
-'''
+
 for key in ratings:           
     print (key, "oceny", ratings[key]) 
 
