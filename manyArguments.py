@@ -1,8 +1,6 @@
 import time
 
 # funkcja która sprawdzi jak szybko działa inna funkcja podaną lub domyślną ilość razy
-
-
 def function_performance(func, *arg, how_many_times = 1):
 
     sum = 0

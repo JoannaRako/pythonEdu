@@ -1,5 +1,8 @@
+'''
+default_argument - amount
 def increment(x, amount = 1):
     return x + amount
+'''
 
 import time
 
@@ -52,9 +55,9 @@ def show_message(message):
     print(message)
 
 
-print(function_performance(sumUp_for, number, 25))
-print(function_performance(sumUp_generatorL, number))
-print(function_performance(sumUp_generatorS, number))
-print(function_performance(sumUp_generatorD, number))
-print(function_performance(sumUp_short, number))
+print("Wynik to:", sumUp_for(number), "Czas wykonania funkcji:", function_performance(sumUp_for, number, 25))
+print("Wynik to:", sumUp_generatorL(number), "Czas wykonania funkcji:", function_performance(sumUp_generatorL, number))
+print("Wynik to:", sumUp_generatorS(number), "Czas wykonania funkcji:", function_performance(sumUp_generatorS, number))
+print("Wynik to:", sumUp_generatorD(number), "Czas wykonania funkcji:", function_performance(sumUp_generatorD, number))
+print("Wynik to:", sumUp_short(number), "Czas wykonania funkcji:", function_performance(sumUp_short, number))
 
