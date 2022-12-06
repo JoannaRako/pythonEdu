@@ -9,6 +9,8 @@ import time
 # Zmienna do wszystkiego
 number = int(input("Wpisz liczbę do której mam sumować: \n"))
 
+# Funkcje sumujące:
+
 # 1. Pętlą
 def sumUp_for(number):
     sum = 0
