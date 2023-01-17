@@ -1,2 +1,2 @@
-# know
+# pythonEducation
 Repository for education.
