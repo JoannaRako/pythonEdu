@@ -26,7 +26,7 @@ from enum import IntEnum
 IntEnum + if (choose == Menu.Prostokąt
 '''
 
-if (choose == Menu.Prostokąt.value):
+if (choose == Menu.Prostokąt):
 
     a = float(input("Długość:\n"))
     b = float(input("Szerokość:\n"))

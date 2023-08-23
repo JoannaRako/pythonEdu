@@ -26,7 +26,6 @@ def pole_trapezu(a, b, h):
     return (a + b) / 2 * h
 
 def pole_kola(r):
-
     return math.pi * r ** 2
 
 
